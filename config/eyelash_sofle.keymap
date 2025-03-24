@@ -75,7 +75,7 @@
 &kp GRAVE      &kp F1         &kp F2         &kp F3         &kp F4        &kp F5          &trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10     &trans
 &kp GRAVE      &kp N1         &kp N2         &kp N3         &kp N4        &kp N5          &trans  &kp N6        &kp N7        &kp N8        &kp N9        &kp N0      &kp LS(AMPS)
 &kp LS(QMARK)  &kp LS(EXCL)   &kp MINUS      &kp LS(UNDER)  &kp EQUAL     &kp LS(STAR)    &trans  &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(LPAR)  &kp LS(RPAR)  &kp BSLH    &kp LS(PIPE)
-&kp Z          &kp LS(POUND)  &kp LS(TILDE)  &kp LS(PRCNT)  &kp LS(PLUS)  &kp LS(DLLR)    &trans  &kp LS(LT)    &kp LS(GT)    &kp LBKT      &kp RBKT      &kp LS(AT)  &kp LS(CARET)
+&tog 1         &kp LS(POUND)  &kp LS(TILDE)  &kp LS(PRCNT)  &kp LS(PLUS)  &kp LS(DLLR)    &trans  &kp LS(LT)    &kp LS(GT)    &kp LBKT      &kp RBKT      &kp LS(AT)  &kp LS(CARET)
 &none          &trans         &trans         &trans         &trans        &trans          &trans  &trans        &trans        &trans        &trans        &trans
             >;
 
@@ -85,24 +85,22 @@
 
         NAVI {
             bindings = <
-&trans  &trans      &trans            &trans            &trans            &trans    &trans  &trans     &trans         &trans    &trans        &trans        &trans
-&trans  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &trans    &trans  &kp PG_UP  &kp LC(MINUS)  &kp UP    &kp LC(PLUS)  &kp N0        &kp BACKSPACE
-&trans  &kp LALT    &kp LCTRL         &kp LSHFT         &kp LGUI          &trans    &trans  &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT     &kp LS(DLLR)  &trans
-&trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans    &trans  &trans     &trans         &trans    &trans        &trans        &tog 2
-&trans  &trans      &trans            &trans            &trans            &trans    &trans  &trans     &trans         &trans    &trans        &trans
+&trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans     &trans         &trans    &trans        &trans        &trans
+&trans  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp HOME    &trans  &kp PG_UP  &kp LC(MINUS)  &kp UP    &kp LC(PLUS)  &kp N0        &kp BACKSPACE
+&trans  &kp LALT    &kp LCTRL         &kp LSHFT         &kp LGUI          &kp END     &trans  &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT     &kp LS(DLLR)  &trans
+&trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans      &trans  &trans     &trans         &trans    &trans        &trans        &tog 2
+&trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans     &trans         &trans    &trans        &trans
             >;
         };
 
         SYSTEM {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
+&tog 3     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &none   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &none   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &trans  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &none   &trans  &trans  &trans      &trans     &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
     };
 };

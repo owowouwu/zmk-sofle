@@ -101,6 +101,8 @@
 &trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans      &trans  &trans     &trans         &trans    &trans        &trans        &tog 2
 &trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans     &trans         &trans    &trans        &trans
             >;
+
+            label = "NAVI";
         };
 
         SYSTEM {
@@ -111,6 +113,8 @@
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &trans  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &none   &trans  &trans  &trans      &trans     &trans
             >;
+
+            label = "SYSTEM";
         };
     };
 };

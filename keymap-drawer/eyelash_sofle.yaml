@@ -169,7 +169,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - Sft+$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+A
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+Z
   - Ctl+X
@@ -260,3 +260,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [0, 12]
+  k: {t: SYSTEM, h: toggle}

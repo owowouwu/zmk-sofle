@@ -55,6 +55,15 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        toggle-system {
+            bindings = <&tog 3>;
+            key-positions = <0 12>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -87,7 +96,7 @@
             bindings = <
 &trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans     &trans         &trans    &trans        &trans        &trans
 &trans  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp HOME    &trans  &kp PG_UP  &kp LC(MINUS)  &kp UP    &kp LC(PLUS)  &kp N0        &kp BACKSPACE
-&trans  &kp LALT    &kp LCTRL         &kp LSHFT         &kp LGUI          &kp END     &trans  &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT     &kp LS(DLLR)  &trans
+&trans  &kp LALT    &kp LCTRL         &kp LSHFT         &kp LGUI          &kp END     &trans  &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT     &kp LS(DLLR)  &kp LC(A)
 &trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans      &trans  &trans     &trans         &trans    &trans        &trans        &tog 2
 &trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans     &trans         &trans    &trans        &trans
             >;

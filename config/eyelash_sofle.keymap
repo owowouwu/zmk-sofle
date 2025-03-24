@@ -25,6 +25,8 @@
     trigger-period-ms = <16>;
 };
 
+&lt { quick-tap-ms = <50>; };
+
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -89,7 +91,6 @@
             >;
 
             display-name = "SYMBOL";
-            sensor-bindings = <&scroll_encoder>;
         };
 
         NAVI {

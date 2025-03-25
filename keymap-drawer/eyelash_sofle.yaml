@@ -177,10 +177,10 @@ layers:
   - Ctl+V
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '{'
+  - '}'
+  - (
+  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: NAVI, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}

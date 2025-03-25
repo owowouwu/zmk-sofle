@@ -95,11 +95,11 @@
 
         NAVI {
             bindings = <
-&trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans     &trans         &trans    &trans        &trans        &trans
-&trans  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp HOME    &trans  &kp PG_UP  &kp LC(MINUS)  &kp UP    &kp LC(PLUS)  &kp N0        &kp BACKSPACE
-&trans  &kp LALT    &kp LCTRL         &kp LSHFT         &kp LGUI          &kp END     &trans  &kp PG_DN  &kp LEFT       &kp DOWN  &kp RIGHT     &kp LS(DLLR)  &kp LC(A)
-&trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans      &trans  &trans     &trans         &trans    &trans        &trans        &tog 2
-&trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans     &trans         &trans    &trans        &trans
+&trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans          &trans           &trans                &trans                 &trans        &trans
+&trans  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp HOME    &trans  &kp PG_UP       &kp LC(MINUS)    &kp UP                &kp LC(PLUS)           &kp N0        &kp BACKSPACE
+&trans  &kp LALT    &kp LCTRL         &kp LSHFT         &kp LGUI          &kp END     &trans  &kp PG_DN       &kp LEFT         &kp DOWN              &kp RIGHT              &kp LS(DLLR)  &kp LC(A)
+&trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans      &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &tog 2
+&trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans          &trans           &trans                &trans                 &trans
             >;
 
             label = "NAVI";

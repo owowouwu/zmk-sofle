@@ -73,7 +73,7 @@
             bindings = <
 &kp GRAVE                   &kp N1    &kp N2        &kp N3               &kp N4                &kp N5                  &none    &kp N6     &kp N7           &kp N8     &kp N9             &kp N0          &kp BACKSLASH
 &kp TAB                     &kp Q     &kp W         &kp E                &kp R                 &kp T                   &none    &kp Y      &kp U            &kp I      &kp O              &kp P           &kp BACKSPACE
-&kp LCTRL                   &kp A     &kp S         &kp D                &kp F                 &kp G                   &none    &kp H      &kp J            &kp K      &kp L              &kp SEMI        &kp APOS
+&mt LCTRL ESCAPE            &kp A     &kp S         &kp D                &kp F                 &kp G                   &none    &kp H      &kp J            &kp K      &kp L              &kp SEMI        &kp APOS
 &caps_word_orshift LSHFT 0  &kp Z     &kp X         &kp C                &kp V                 &kp B                   &kp TAB  &kp N      &kp M            &kp COMMA  &kp DOT            &kp FSLH        &tog 2
 &kp C_MUTE                  &kp LGUI  &kp LEFT_ALT  &mt LEFT_ALT ESCAPE  &oneshot_or_hold 1 1  &mt LEFT_SHIFT ENTER    &none    &kp SPACE  &lt 2 BACKSPACE  &kp LGUI   &kp LC(BACKSPACE)  &kp LC(DELETE)
             >;

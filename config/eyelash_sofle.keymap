@@ -61,8 +61,13 @@
         compatible = "zmk,combos";
 
         toggle-system {
-            bindings = <&tog 3>;
+            bindings = <&tog 4>;
             key-positions = <0 12>;
+        };
+
+        macostoggle {
+            bindings = <&tog 1>;
+            key-positions = <13 25>;
         };
     };
 
@@ -74,11 +79,23 @@
 &kp GRAVE                   &kp N1    &kp N2        &kp N3               &kp N4                &kp N5                  &none    &kp N6     &kp N7           &kp N8     &kp N9             &kp N0          &kp BACKSLASH
 &kp TAB                     &kp Q     &kp W         &kp E                &kp R                 &kp T                   &none    &kp Y      &kp U            &kp I      &kp O              &kp P           &kp BACKSPACE
 &mt LCTRL ESCAPE            &kp A     &kp S         &kp D                &kp F                 &kp G                   &none    &kp H      &kp J            &kp K      &kp L              &kp SEMI        &kp APOS
-&caps_word_orshift LSHFT 0  &kp Z     &kp X         &kp C                &kp V                 &kp B                   &kp TAB  &kp N      &kp M            &kp COMMA  &kp DOT            &kp FSLH        &tog 2
-&kp C_MUTE                  &kp LGUI  &kp LEFT_ALT  &mt LEFT_ALT ESCAPE  &oneshot_or_hold 1 1  &mt LEFT_SHIFT ENTER    &none    &kp SPACE  &lt 2 BACKSPACE  &kp LGUI   &kp LC(BACKSPACE)  &kp LC(DELETE)
+&caps_word_orshift LSHFT 0  &kp Z     &kp X         &kp C                &kp V                 &kp B                   &kp TAB  &kp N      &kp M            &kp COMMA  &kp DOT            &kp FSLH        &tog 3
+&kp C_MUTE                  &kp LGUI  &kp LEFT_ALT  &mt LEFT_ALT ESCAPE  &oneshot_or_hold 2 2  &mt LEFT_SHIFT ENTER    &none    &kp SPACE  &lt 3 BACKSPACE  &kp LGUI   &kp LC(BACKSPACE)  &kp LC(DELETE)
             >;
 
             display-name = "ALPHA";
+        };
+
+        MACOS {
+            bindings = <
+&trans               &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans               &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mt LEFT_WIN ESCAPE  &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans               &trans     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans               &kp LCTRL  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "OSX";
         };
 
         SYMBOL {
@@ -86,7 +103,7 @@
 &kp GRAVE      &kp F1         &kp F2         &kp F3         &kp F4        &kp F5          &trans  &kp F6        &kp F7        &kp F8        &kp F9        &kp F10     &trans
 &kp GRAVE      &kp N1         &kp N2         &kp N3         &kp N4        &kp N5          &trans  &kp N6        &kp N7        &kp N8        &kp N9        &kp N0      &kp LS(AMPS)
 &kp LS(QMARK)  &kp LS(EXCL)   &kp MINUS      &kp LS(UNDER)  &kp EQUAL     &kp LS(STAR)    &trans  &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(LPAR)  &kp LS(RPAR)  &kp BSLH    &kp LS(PIPE)
-&tog 1         &kp LS(POUND)  &kp LS(TILDE)  &kp LS(PRCNT)  &kp LS(PLUS)  &kp LS(DLLR)    &trans  &kp LS(LT)    &kp LS(GT)    &kp LBKT      &kp RBKT      &kp LS(AT)  &kp LS(CARET)
+&tog 2         &kp LS(POUND)  &kp LS(TILDE)  &kp LS(PRCNT)  &kp LS(PLUS)  &kp LS(DLLR)    &trans  &kp LS(LT)    &kp LS(GT)    &kp LBKT      &kp RBKT      &kp LS(AT)  &kp LS(CARET)
 &none          &trans         &trans         &trans         &trans        &trans          &trans  &trans        &trans        &trans        &trans        &trans
             >;
 
@@ -98,7 +115,7 @@
 &trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans          &trans           &trans                &trans                 &trans        &trans
 &trans  &kp LG(N1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp HOME    &trans  &kp PG_UP       &kp LC(MINUS)    &kp UP                &kp LC(PLUS)           &kp N0        &kp BACKSPACE
 &trans  &kp LALT    &kp LCTRL         &kp LSHFT         &kp LGUI          &kp END     &trans  &kp PG_DN       &kp LEFT         &kp DOWN              &kp RIGHT              &kp LS(DLLR)  &kp LC(A)
-&trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans      &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &tog 2
+&trans  &kp LC(Z)   &kp LC(X)         &kp LC(C)         &kp LC(V)         &trans      &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &tog 3
 &trans  &trans      &trans            &trans            &trans            &trans      &trans  &trans          &trans           &trans                &trans                 &trans
             >;
 
@@ -108,7 +125,7 @@
         SYSTEM {
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&tog 3     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &none   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
+&tog 4     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &none   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
 &trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &none   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &trans  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &none   &trans  &trans  &trans      &trans     &trans
